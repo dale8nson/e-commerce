@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'satoshi';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff');
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face{
+  font-family: 'IntegralCF' sans-serif;
+  font-style: extra-bold;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-extrabold.otf') format('otf');
 }
+
+/* @font-face{ */
+  /* font-family: 'IntegralCF'; */
+  /* font-style: semi-bold; */
+  /* font-weight: 600; */
+  /* font-display: swap; */
+  /* src: url('/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-extrabold.otf') format('otf');
+} */
