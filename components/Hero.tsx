@@ -6,11 +6,11 @@ import { Star } from "./Star";
 
 const Hero = () => {
   return (
-    <div className="py-5">
+    <div className="pt-5 bg-[#F2F0F1]">
       <div className="px-4">
         <h2 className="font-sans font-black text-[36px] tracking-widest leading-[38px]">FIND CLOTHES<br /> THAT MATCH <br />YOUR STYLE</h2>
         <p className="font-[satoshi] text-[14px] text-[#000000] opacity-60 py-4">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-        <ActionBtn>Shop Now</ActionBtn>
+        <ActionBtn className="text-white bg-black">Shop Now</ActionBtn>
         <div className="p-4 flex flex-col align-middle justify-center gap-4">
           <div className="flex px-2 justify-center gap-4">
             <Metric className="border-r-2 border-solid">
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <Image className="w-[390px] h-[448px]" src="/Rectangle 2@2x.png" width={1440} height={663} alt="" />
+        <Image className="w-full h-full" src="/Rectangle 2@2x.png" width={1440} height={663} alt="" />
         <div className="absolute right-[10%] top-[7%] w-[76px] h-[76px]">
           <Star fill="black" />
         </div>

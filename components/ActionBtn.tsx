@@ -1,11 +1,11 @@
 "use client"
 import { MouseEventHandler, ReactNode } from "react"
 
-const ActionBtn = ({ onClick, children }:{onClick: MouseEventHandler<HTMLButtonElement>, children: ReactNode}) => {
+const ActionBtn = ({ onClick, children, className = "" }:{onClick: MouseEventHandler<HTMLButtonElement>, children: ReactNode, className?:string}) => {
   return (
-    <button onClick={onClick} className="action-button w-full h-[52px] text-[16px] rounded-full bg-black text-white font-[satoshi] flex items-center justify-items-center justify-center align-middle [&_a]:underline">
-      {children}
-    </button>
+      <button onClick={onClick} className={`w-full h-[52px] text-[16px] rounded-full  font-[satoshi] flex items-center justify-items-center justify-center align-middle hover:translate-y-[2px] active:translate-y-[2px] transition-all duration-[.2]  hover:shadow-inner ${className}`}>
+        {children}
+      </button>
   )
 }
 
