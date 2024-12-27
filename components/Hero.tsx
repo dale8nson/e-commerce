@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="px-4">
         <h2 className="font-sans font-black text-[36px] tracking-widest leading-[38px]">FIND CLOTHES<br /> THAT MATCH <br />YOUR STYLE</h2>
         <p className="font-[satoshi] text-[14px] text-[#000000] opacity-60 py-4">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-        <ActionBtn className="text-white bg-black">Shop Now</ActionBtn>
+        <ActionBtn onClick={() => {}} className="text-white bg-black">Shop Now</ActionBtn>
         <div className="p-4 flex flex-col align-middle justify-center gap-4">
           <div className="flex px-2 justify-center gap-4">
             <Metric className="border-r-2 border-solid">
