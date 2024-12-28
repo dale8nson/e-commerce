@@ -1,4 +1,5 @@
 "use client"
+import { useState } from "react"
 import { TextBanner } from "@/components/TextBanner"
 import Link from "next/link"
 import { AppBar } from "@/components/AppBar"
@@ -6,11 +7,14 @@ import { Hero } from "@/components/Hero"
 import { Product } from "@/components/Product"
 import { Category } from "@/components/Category"
 import { Reviews, Review } from "@/components/Reviews"
+import { Form } from "@/components/Form"
 
 export default function Home() {
 
+  const [email, setEmail ] = useState("")
+
   return (
-    <div className="w-[390px] mx-auto">
+    <div className="w-full mx-0">
       <TextBanner>Sign up and get 20% off to your first order.&nbsp;<Link href="">Sign Up Now</Link></TextBanner>
       <AppBar />
       <main className="w-full h-full">
@@ -118,6 +122,16 @@ export default function Home() {
             </Review.Text>
           </Review>
         </Reviews>
+        <Form>
+          <Form.Title>
+            STAY UP TO DATE ABOUT OUR LATEST OFFERS
+          </Form.Title>
+          <Form.Input.Email value={email} placeholder="Enter your email address" onChange={(e) => setEmail((e.target as HTMLInputElement).value)} >
+          </Form.Input.Email>
+          <Form.Button>
+            Subscribe to Newsletter
+          </Form.Button>
+        </Form>
       </main>
       <footer className="">
 

@@ -51,9 +51,9 @@ const Grid: Grid = ({ children }) => {
   return (
     <div className="flex flex-col items-center bg-[#f0f0f0] rounded-xl py-8 m-4">
       {title}
-      <div className="flex flex-col align-middle items-center md:grid md:grid-cols-3 gap-0 md:gap-4 mx-0 ">
+      <div className=" flex flex-col align-middle items-center md:grid md:grid-cols-3 gap-0 md:gap-0 mx-0 ">
         {categories.map((category, i) => (
-          <div key={i} className={`flex flex-col rounded-xl relative md:col-span-${i % 3 == 0 ? 1 : 2}`} >
+          <div key={i} className={`flex flex-col rounded-xl relative`} style={{gridColumn: `span ${i % 3 == 0 ? 1 : 2}`}} >
             {category}
           </div>
         ))}
